@@ -40,7 +40,7 @@ nav ul {
     
 }
 
-nav ul .list {
+nav .list {
     text-decoration: underline;
     color: green;
     margin-right: 30px;
@@ -77,3 +77,69 @@ section #subtitle {
     font-weight: lighter;
 }
 
+#main-body {
+    max-width: 88%;  
+    margin: 5%;
+}
+
+.headline {
+    padding: 3% 2% 7% 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+#about-me {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right-style: solid;
+    border-right-width: 4px;
+    font-size: 40pt;
+}
+
+.body-copy {
+    width:  80%;
+    line-height: 1.5;  
+    padding: 1%;
+}
+
+#work {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right-style: solid;
+    border-right-width: 4px;
+    font-size: 40pt;
+}
+
+#contact {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right-style: solid;
+    border-right-width: 4px;
+    font-size: 40pt;
+}
+
+div address {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+div .contact-info {
+    text-decoration:underline;
+    color: gray;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 100%;
+    font-size: 20pt;
+    font-weight: bold;
+}
