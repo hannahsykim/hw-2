@@ -41,30 +41,26 @@ nav ul {
 }
 
 nav .list {
-    text-decoration: none;
-    color: green;
-    margin-right: 30px;
-    padding: 4px 4px 20px 0;
+    margin-right: 60px;
+    padding: 4px 4px 20px;
     display: flex;
     justify-content:space-around;
     width: 100%;
     font-size: larger;
     font-weight: bold;
 }
-
-a {
-    display: inline-block;
-    max-height: 2px;
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-    background-color: rosybrown;
-    transition: background-position 1s ease-out;
+ul li a {
+    border-bottom: 5px solid green;
+    padding: 0 0 5px;
+    text-decoration: none;
+    color: green;
 }
 
-a:hover {
-    height: 150%;
-    background-position: 0% 100%;
+ul li a:hover {
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease-in;
 }
 
 .hero-banner {
@@ -97,7 +93,7 @@ section #subtitle {
 }
 
 .headline {
-    padding: 3% 2% 7% 0;
+    padding: 3% 2% 1% 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction:row;
@@ -123,6 +119,7 @@ section #subtitle {
     flex-wrap: wrap;
     justify-content:space-between;
     
+    
 }
 
 #work {
@@ -139,7 +136,7 @@ section #subtitle {
 a div {
     background-color: aqua;
     padding: 1pt 1% 1pt 1%;
-    
+    color: black;
 }
 
 .flex-basis {
@@ -154,7 +151,7 @@ a div {
 }
 
 .bkgrd-image {
-    background-color: darkgreen;
+    background-color: darkkhaki;
     background-blend-mode: multiply;
 }
 
@@ -167,7 +164,7 @@ a div {
 div #work-one {
     min-height: 400px;
     width: 100%;
-    background-image: url("Assets/wood-wall-1194755.jpg");
+    background-image: url("/Assets/wood-wall-1194755.jpg");
     
 }
 
@@ -189,7 +186,6 @@ div #work-four {
     min-height: 100px;
     width: 450px;
     background-image: url("Assets/wood-texture-1540241.jpg");
-   
 }
 
 div #work-five {
@@ -217,6 +213,7 @@ div address {
 
 
 div .contact-info {
+    
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -227,9 +224,17 @@ div .contact-info {
     list-style: none;
 }
 
-a {
+div .contact-info a {
     text-decoration: none;
-    color: gray;
+    color: darkgreen;
+    border-bottom: 5px solid darkgreen;
+    padding: 0 0 5px;
+}
+
+div .contact-info a:hover {
+    background-color: darkgreen;
+    color: white;
+    transition: all .2s ease-in-out;
 }
 
 @media screen and (max-width: 992px) {
@@ -249,7 +254,21 @@ a {
         align-content: center;
         padding: 3px 0 5px;
     }
+    
+    div .headline > #work {
+        border-right: none;
+        border-bottom: 4px solid black;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
 
+    div .body-copy {
+        flex: 0 0 100%;
+        
+    }
+    
     #contact {
         border-right: none;
         border-bottom: 5px solid black;
