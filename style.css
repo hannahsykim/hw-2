@@ -65,7 +65,7 @@ ul li a:hover {
 
 .hero-banner {
     background-color: transparent;
-    background-image: url("../Assets/pexels-dom-j-310452.jpg");
+    background-image: url("/hw-2/Assets/download.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -111,16 +111,24 @@ section #subtitle {
     font-size: 40pt;
 }
 
-.body-copy {
+#mypic {
+    display: flex;
+    width: 40%;
+    
+}
+
+#body-copy {
     width:  100%;
     line-height: 1.5;  
     padding: 0pt 0pt 0pt 2%;
     padding-right: 1%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
-    justify-content: space-around;
+}
+
+#text-1 {
+    padding-left: 10pt;
 }
 
 #work {
@@ -133,12 +141,24 @@ section #subtitle {
     
 }
 
+#work-copy {
+    width:  100%;
+    line-height: 1.5;  
+    padding: 0pt 0pt 0pt 2%;
+    padding-right: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
 a div {
     background-color: aqua;
-    padding: 1pt 1% 1pt 1%;
+    display: flex;
     color: black;
-    
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10pt;
+    padding-left: 4pt;
 }
 
 .flex-basis {
@@ -146,12 +166,11 @@ a div {
     display: flex;
     align-items: flex-end;
     padding: 25pt 0 30pt;
-    margin-bottom: 2%;
     text-decoration: none;
 }
 
 .bkgrd-image {
-    background-color: darkkhaki;
+    background-color: rgb(144, 223, 222);
     background-blend-mode: multiply;
 }
 
@@ -161,9 +180,10 @@ a div {
     -webkit-transition: background-color 1s ease;
 }
 
+
 div #work-one {
-    background-image: url("/Assets/wood-wall-1194755.jpg");
-    
+    background-image: url("/hw-2/Assets/Screen\ Shot\ 2022-11-14\ at\ 7.49.27\ PM.png");
+    background-size: cover;
 }
 
 div .flex-basis:first-child {
@@ -215,7 +235,15 @@ div address {
     
 }
 
-
+#contact-copy {
+    width:  100%;
+    line-height: 1.5;  
+    padding: 0pt 0pt 0pt 2%;
+    padding-right: 1%;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
 div .contact-info {
     align-items: center;
     display: flex;
@@ -231,7 +259,7 @@ div .contact-info a {
     text-decoration: none;
     color: darkgreen;
     border-bottom: 5px solid darkgreen;
-    padding: 0 0 5px;
+    
 }
 
 div .contact-info a:hover {
@@ -240,56 +268,92 @@ div .contact-info a:hover {
     transition: all .2s ease-in-out;
 }
 
-@media screen and (max-width: 992px) {
-    header {
-      padding: 0 0 10px 0;
-      justify-content: center;
-      text-align: center;
-    }
-    
-    header h1{
-        width: 100%;
-        padding: 10px;    
-    }
-    
-    nav,
-    ul.list {
-        align-content: center;
-        padding: 3px 0 5px;
-    }
-    
-    div .headline > #work {
-        border-right: none;
-        border-bottom: 4px solid black;
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        text-align: left;
-        font-size: 7vw;
-    }
-
-    div .body-copy {
-        flex: 0 0 100%;
-        
-    }
-    
-    #contact {
-        border-right: none;
-        border-bottom: 5px solid black;
-        margin-bottom: 30px;
-        padding-bottom: 10px;
-        text-align: left;
-    }
-
-    div
-    .body-copy,
-    .contact-info {
-        flex: 0 0 100% ;
+@media screen and (max-width: 768px) {
+    #main-body,
+    nav {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-content: space-around;
-        justify-content: space-around;
-        align-items: flex-start;
+        justify-content: center;
+    }
+    #body-copy,
+    #contact-copy {
+        flex-direction: column;
+        padding-top: 15pt;
+        align-items: center;
+    }
+
+    #work-copy {
+        flex-direction: column;
+        padding-top: 15pt;
+        align-items: center;
+        width: 200%;
+        height: 200%;
+    }
+
+    div .flex-basis:first-child {
+        width: 50%;
+        
+    }
+
+    #about-me {
+        flex: 0 0 20%;
+        text-align: center;
+        padding-right: 0px;
+        border-right-style: solid;
+        border-right-width: 0px;
+        padding-bottom: 5px;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        font-size: 40pt;
     }
     
+
+    .headline {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mypic {
+        width: 60%;
+        
+        height: min-content;
+    }
+
+    #text-1 {
+        padding-top: 20pt;
+        padding-left: 0;
+    }
+
+    #work {
+        flex: 0 0 20%;
+        text-align: right;
+        padding-right: 0px;
+        border-right-style: solid;
+        border-right-width: 0px;
+        padding-bottom: 5px;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        font-size: 40pt;
+    }
+
+    #contact {
+        flex: 0 0 20%;
+        text-align: right;
+        padding-right: 0px;
+        border-right-style: solid;
+        border-right-width: 0px;
+        font-size: 40pt;
+        padding-bottom: 5px;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+    }
+    
+    div .contact-info {
+        
+        flex-direction: column;
+        
+    }
+
 }
